@@ -1,5 +1,5 @@
 <?php 
-echo "<h2> Hello World </h2>";
-echo "test<br>";
+echo "<h2> Hello ITF </h2>";
+echo "TAN PU JA LERN<br>";
 
 ?>
