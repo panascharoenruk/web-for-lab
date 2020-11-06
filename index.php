@@ -40,12 +40,13 @@
             <div class="col-sm-3">
                 <img src="img/content/office1.jpg" alt="" style="height: 180; width: 250;">
                 <img src="img/content/office2.jpg" alt="" style="height: 180; width: 250;">
-                <img src="img/content/office3.jpg" alt="" style="height: 180; width: 250;">
+                <img src="img/content/office4.jpg" alt="" style="height: 180; width: 250;">
             </div>
             <div class="col-sm-3">
                 <img src="img/staffs/staff4.jpg" alt="" style="height: 360; width: 250;"><br>
-                <img src="img/content/office4.jpg" alt="" style="height: 180; width: 250;">
+                <img src="img/content/office3.jpg" alt="" style="height: 180; width: 250;">
             </div>
+            <a href="work2.html">Go to Layout Page</a>
         </div>
     </div>
     
