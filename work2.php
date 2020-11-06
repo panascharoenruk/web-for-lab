@@ -15,7 +15,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Work1</h5>
                       <p class="card-text">กดปุ่มเพื่อไปงานแรก</p>
-                      <a href="index.php" class="btn btn-primary">Go index</a>
+                      <a href="https://webforlab.azurewebsites.net/" class="btn btn-primary">Go index</a>
                     </div>
                 </div>
             </div>
