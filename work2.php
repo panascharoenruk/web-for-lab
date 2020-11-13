@@ -34,7 +34,7 @@
                     <img class="card-img-top" src="img/work/work3.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Onlearn</h5>
-                      <p class="card-text">Onlearn</p>
+                      <p class="card-text">Onlean</p>
                       <a href="https://onlearn.it.kmitl.ac.th/" class="btn btn-primary">Go</a>
                     </div>
                 </div>
