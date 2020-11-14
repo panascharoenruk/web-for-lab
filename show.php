@@ -37,7 +37,8 @@ $res = mysqli_query($conn, 'SELECT * FROM newbook');
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Link </div></th>
-    <th width="150"> <div align="center">Edit/Delete </div></th>
+    <th width="150"> <div align="center">Edit </div></th>
+    <th width="150"> <div align="center">Delete </div></th>
   </tr>
 </thead>
 <?php
@@ -48,12 +49,8 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td>
-      <a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
-      <a href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
-
-
-    </td>
+    <td><a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a></td>
+    <td><a href="delete.php?id=<?php echo $data['id']; ?>">Delete</a></td>
   </tr>
 </div>
 <?php
