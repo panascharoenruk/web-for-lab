@@ -13,7 +13,10 @@ $del = mysqli_query($conn,"delete from newbook where id = '$id'"); // delete que
 
 if($del)
 {
-    echo $id;
+    $del;
+    mysqli_close($conn); // Close connection
+    header("location:show.php"); // redirects to all records page
+    exit;	
 }
 else
 {
