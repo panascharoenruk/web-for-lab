@@ -13,18 +13,18 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM newbook');
 ?>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark" style="color :white;">
-    <a class="navbar-brand" href="#">Show</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#"  style="color: white;">Show</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="show.php">show</a>
+          <a class="nav-link" href="show.php" style="color: white;">show</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="form.html">form<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="form.html" style="color: white;">form<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
