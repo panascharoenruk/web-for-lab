@@ -48,6 +48,12 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
+    <td>
+      <button class="btn btn-primary"></button>
+      <button class="btn btn-primary"></button>
+
+
+    </td>
   </tr>
 </div>
 <?php
