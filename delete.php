@@ -14,7 +14,7 @@ $del = mysqli_query($conn,"delete from newbook where id = '$id'"); // delete que
 if($del)
 {
     mysqli_close($conn); // Close connection
-    header("location:all_records.php"); // redirects to all records page
+    header("location:show.php"); // redirects to all records page
     exit;	
 }
 else
