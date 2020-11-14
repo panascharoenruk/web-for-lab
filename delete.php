@@ -9,7 +9,7 @@ if (mysqli_connect_errno($conn))
 
 $id = $_GET['id']; // get id through query string
 
-$del = mysqli_query($db,"delete from tblemp where id = '$id'"); // delete query
+$del = mysqli_query($db,"delete from newbook where id = '$id'"); // delete query
 
 if($del)
 {
