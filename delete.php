@@ -7,9 +7,9 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-$id = $_GET['id']; // get id through query string
+$id = $_GET['ID']; // get id through query string
 
-$del = mysqli_query($db,"delete from newbook where id = '$id'"); // delete query
+$del = mysqli_query($db,"delete from newbook where ID = '$ID'"); // delete query
 
 if($del)
 {
