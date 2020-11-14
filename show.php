@@ -49,7 +49,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><a href='edit.php?id="<?php echo $data['id']; ?>'>Edit</a></td>
+    <td><a href='edit.php?id=<?php echo $data['id']; ?>'>Edit</a></td>
     <td><a href='delete.php?id=<?php echo $data['id']; ?>'>Delete</a></td>
   </tr>
 </div>
