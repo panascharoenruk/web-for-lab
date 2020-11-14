@@ -13,7 +13,6 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM newbook');
 ?>
-<div class="container">
 <nav class="navbar navbar-expand-lg navbar-light bg-black">
     <a class="navbar-brand" href="#">Show</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +30,7 @@ $res = mysqli_query($conn, 'SELECT * FROM newbook');
     </div>
   </nav>
 
-
+<div class="container">
 <table width="600" border="1" class="table">
 <thead class="thead-dark">
   <tr>
