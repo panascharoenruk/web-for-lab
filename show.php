@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <title>ITF Lab</title>
 </head>
-<body style="background-color: gray;">
+<body style="background-color: coral;">
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'michelle23.mysql.database.azure.com', 'panas23@michelle23', 'Michelle23', 'itflab2', 3306);
@@ -13,18 +13,18 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM newbook');
 ?>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand" href="#"  style="color: white;">Show</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-black">
+    <a class="navbar-brand" href="#">Show</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="show.php" style="color: white;">show</a>
+          <a class="nav-link" href="show.php">show</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="form.html" style="color: white;">form<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="form.html">form<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
@@ -37,6 +37,7 @@ $res = mysqli_query($conn, 'SELECT * FROM newbook');
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Link </div></th>
+    <th width="150"> <div align="center">Edit/Delete </div></th>
   </tr>
 </thead>
 <?php
