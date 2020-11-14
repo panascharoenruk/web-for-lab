@@ -13,7 +13,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM newbook');
 ?>
-
+<div class="container">
 <nav class="navbar navbar-expand-lg navbar-light bg-black">
     <a class="navbar-brand" href="#">Show</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +49,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
   </tr>
+</div>
 <?php
 }
 ?>
