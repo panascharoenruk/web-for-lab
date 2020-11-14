@@ -49,8 +49,8 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
     <td>
-      <button class="btn btn-primary"></button>
-      <button class="btn btn-primary"></button>
+      <input type="submit" id="commentBtn" class="btn btn-primary">
+      <input type="submit" id="commentBtn" class="btn btn-primary">
 
 
     </td>
