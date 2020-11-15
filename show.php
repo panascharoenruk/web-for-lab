@@ -53,7 +53,7 @@ while($Result = mysqli_fetch_array($res))
     <td style="text-align: center;"><a href='delete.php?id=<?php echo $Result['id']; ?>' class="btn btn-light">Delete</a></td>
   </tr>
 </div>
-<td style="text-align: center;"><a href='form.html?id=<?php echo $Result['id']; ?>' class="btn btn-light">Add</a></td>
+<td style="text-align: center;"><a href='form.html' class="btn btn-light">Add</a></td>
 <?php
 }
 ?>
