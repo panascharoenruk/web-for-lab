@@ -10,9 +10,9 @@ if (mysqli_connect_errno($conn))
 
 $id = $_GET['id']; // get id through query string
 
-$qry = mysqli_query($conn,"select * from newbook where id ='$id'"); // select query
+$res = mysqli_query($conn,"select * from newbook where id ='$id'"); // select query
 
-$data = mysqli_fetch_array($qry); // fetch data
+$Result = mysqli_fetch_array($res); // fetch data
 
 if(isset($_POST['update'])) // when click on Update button
 {
