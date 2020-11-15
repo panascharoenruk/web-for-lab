@@ -10,7 +10,7 @@ if (mysqli_connect_errno($conn))
 
 $id = $_GET['id']; // get id through query string
 
-$qry = mysqli_query($conn,"select * from newbook where id='$id'"); // select query
+$qry = mysqli_query($conn,"select * from newbook where id ='$id'"); // select query
 
 $data = mysqli_fetch_array($qry); // fetch data
 
@@ -19,10 +19,11 @@ if(isset($_POST['update'])) // when click on Update button
     $name = $_POST['Name'];
     $comment = $_POST['Comment'];
 	
-    $edit = mysqli_query($conn,"update newbook set Name='$name', Comment='$comment' where id='$id'");
+    $edit = mysqli_query($conn,"update newbook set Name ='$name', Comment ='$comment' where id='$id'");
 	
     if($edit)
     {
+        $edit;
         mysqli_close($conn); // Close connection
         header("location:show.php"); // redirects to all records page
         exit;
