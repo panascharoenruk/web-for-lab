@@ -37,7 +37,7 @@ if(isset($_POST['update'])) // when click on Update button
 <h3>Update Data</h3>
 
 <form method="POST">
-  <input type="text" name="Name" value="<?php echo $data['Name'] ?>" placeholder="Enter Name" Required>
-  <input type="text" name="Comment" value="<?php echo $data['Comment'] ?>" placeholder="Enter Comment" Required>
+  <input type="text" name="Name" value="<?php echo $Result['Name'] ?>" placeholder="Enter Name" Required>
+  <input type="text" name="Comment" value="<?php echo $Result['Comment'] ?>" placeholder="Enter Comment" Required>
   <input type="submit" name="update" value="Update">
 </form>
