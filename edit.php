@@ -18,8 +18,9 @@ if(isset($_POST['update'])) // when click on Update button
 {
     $name = $_POST['Name'];
     $comment = $_POST['Comment'];
+    $link = $_POST['Link'];
 	
-    $edit = mysqli_query($conn,"update newbook set Name = '$name', Comment = '$comment' where id = '$id'");
+    $edit = mysqli_query($conn,"update newbook set Name = '$name', Comment = '$comment', Link = '$link' where id = '$id'");
 	
     if($edit)
     {
@@ -39,5 +40,6 @@ if(isset($_POST['update'])) // when click on Update button
 <form method="POST">
   <input type="text" name="Name" value="<?php echo $Result['Name'] ?>" placeholder="Enter Name" Required>
   <input type="text" name="Comment" value="<?php echo $Result['Comment'] ?>" placeholder="Enter Comment" Required>
+  <input type="text" name="Link" value="<?php echo $Result['Link'] ?>" placeholder="Enter Link" Required>
   <input type="submit" name="update" value="update">
 </form>
