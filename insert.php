@@ -18,6 +18,9 @@ $sql = "INSERT INTO newbook (Name , Comment , Link) VALUES ('$name', '$comment',
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
+    mysqli_close($conn); // Close connection
+    header("location:show.php"); // redirects to all records page
+    exit;
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
