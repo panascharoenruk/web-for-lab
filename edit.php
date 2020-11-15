@@ -19,11 +19,10 @@ if(isset($_POST['update'])) // when click on Update button
     $name = $_POST['Name'];
     $comment = $_POST['Comment'];
 	
-    $edit = mysqli_query($conn,"update newbook set Name ='$name', Comment ='$comment' where id='$id'");
+    $edit = mysqli_query($conn,"update newbook set Name = '$name', Comment = '$comment' where id = '$id'");
 	
     if($edit)
     {
-        $edit;
         mysqli_close($conn); // Close connection
         header("location:show.php"); // redirects to all records page
         exit;
