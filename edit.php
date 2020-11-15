@@ -42,6 +42,6 @@ if(isset($_POST['update'])) // when click on Update button
   <input class="form-control" type="text" name="Name" value="<?php echo $Result['Name'] ?>" placeholder="Enter Name" Required>
   <input class="form-control" type="text" name="Comment" value="<?php echo $Result['Comment'] ?>" placeholder="Enter Comment" Required>
   <input class="form-control" type="text" name="Link" value="<?php echo $Result['Link'] ?>" placeholder="Enter Link" Required>
-  <input type="submit" name="update" value="update">
+  <input type="submit" name="update" value="update" class="btn btn-primary">
 </form>
 </body>
