@@ -50,7 +50,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
     <td style="text-align: center;"><a href='edit.php?id="<?php echo $Result['id']; ?>' class="btn btn-light">Edit</a></td>
-    <td style="text-align: center;"><a href='delete.php?id=<?php echo $Result['id']; ?>' class="btn btn-light">Delete</a></td>
+    <td style="text-align: center;"><a href='delete.php?id="<?php echo $Result['id']; ?>' class="btn btn-light">Delete</a></td>
   </tr>
 </div>
 <?php
