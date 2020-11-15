@@ -1,5 +1,3 @@
-<html>
-<body style="background-color: gray;">
 <?php
 
 $conn = mysqli_init();
@@ -45,5 +43,3 @@ if(isset($_POST['update'])) // when click on Update button
   <input class="form-control" type="text" name="Link" value="<?php echo $Result['Link'] ?>" placeholder="Enter Link" Required>
   <input type="submit" name="update" value="update" class="btn btn-primary">
 </form>
-</body>
-</html>
