@@ -41,6 +41,7 @@ if(isset($_POST['update'])) // when click on Update button
 <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Update Data</a>
 </nav>
+<br>
 <div class="container">
 <div class="card">
 <form method="POST">
