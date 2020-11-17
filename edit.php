@@ -40,8 +40,9 @@ if(isset($_POST['update'])) // when click on Update button
 
 <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Update Data</a>
-  </nav>
+</nav>
 
+<div class="card">
 <form method="POST">
 <div class="container">
   <input class="form-control" type="text" name="Name" value="<?php echo $Result['Name'] ?>" placeholder="Enter Name" Required>
@@ -53,6 +54,6 @@ if(isset($_POST['update'])) // when click on Update button
   <input type="submit" name="update" value="update" class="btn btn-primary">
 </div>
 </form>
-
+</div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
