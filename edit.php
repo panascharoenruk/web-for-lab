@@ -41,10 +41,9 @@ if(isset($_POST['update'])) // when click on Update button
 <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Update Data</a>
 </nav>
-
+<div class="container">
 <div class="card">
 <form method="POST">
-<div class="container">
   <input class="form-control" type="text" name="Name" value="<?php echo $Result['Name'] ?>" placeholder="Enter Name" Required>
   <br>
   <input class="form-control" type="text" name="Comment" value="<?php echo $Result['Comment'] ?>" placeholder="Enter Comment" Required>
