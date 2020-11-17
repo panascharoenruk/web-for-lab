@@ -1,4 +1,3 @@
-
 <?php
 
 $conn = mysqli_init();
@@ -38,13 +37,12 @@ if(isset($_POST['update'])) // when click on Update button
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+<h3>Update Data</h3>
+
 <form method="POST">
   <input class="form-control" type="text" name="Name" value="<?php echo $Result['Name'] ?>" placeholder="Enter Name" Required>
-  <br>
   <input class="form-control" type="text" name="Comment" value="<?php echo $Result['Comment'] ?>" placeholder="Enter Comment" Required>
-  <br>
   <input class="form-control" type="text" name="Link" value="<?php echo $Result['Link'] ?>" placeholder="Enter Link" Required>
-  <br>
   <input type="submit" name="update" value="update" class="btn btn-primary">
 </form>
 
